@@ -1,0 +1,33 @@
+.clicked {
+  border-bottom: 3px solid #fff !important;
+}
+@media screen and (max-width: 39.9375em) {
+  .clicked {
+    border-right: 3px solid #fff !important;
+    border-bottom: 0 !important;
+    height: rem(32) !important;
+  }
+}
+
+.selected {
+  display: block !important;
+  position: absolute !important;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  height: 100vh !important;
+  width: 67% !important;
+  max-width: 400px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#151923), color-stop(#333F53), to(#1D273C)) !important;
+  background: linear-gradient(180deg, #151923, #333F53, #1D273C) !important;
+}
+
+.menu-selected {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: rem(150);
+  left: rem(32);
+}

@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none !important;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+body {
+  background-image: url("/assets/crew/background-crew-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.navbar {
+  height: 6rem;
+  margin-top: 2.5rem;
+}
+.navbar .log {
+  margin-left: 3.4375rem;
+}
+.navbar .line {
+  border-bottom: 1px solid #484B54;
+  width: 630px;
+  position: absolute;
+  left: 14.375rem;
+  top: 3.5rem !important;
+  z-index: 1;
+}
+@media screen and (max-width: 114.3125em) {
+  .navbar .line {
+    display: none;
+  }
+}
+.navbar .nav {
+  height: 6rem;
+  width: 57%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#151923), color-stop(#333F53), to(#1D273C));
+  background: linear-gradient(90deg, #151923, #333F53, #1D273C);
+  position: relative;
+}
+.navbar .nav ul {
+  margin-bottom: 0;
+  width: 45rem;
+  margin-right: 0.625rem;
+}
+.navbar .nav ul li a {
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  letter-spacing: 3.375px;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5px;
+  border-bottom: 3px solid transparent;
+}
+.navbar .nav ul li a:hover {
+  border-bottom: 3px solid #85868B;
+}
+.navbar .nav ul li a span {
+  font-weight: bold;
+  margin-right: 0.375rem;
+}
+
+.container {
+  height: calc(90vh - 138px);
+  width: 90%;
+  margin-top: 6rem;
+  -webkit-box-align: end !important;
+      -ms-flex-align: end !important;
+          align-items: flex-end !important;
+  position: relative;
+}
+.container .pickup {
+  width: 650px;
+  height: 680px !important;
+}
+.container .pickup .crew {
+  background-image: url(/assets/crew/image-douglas-hurley.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+  width: auto;
+  height: 680px;
+}
+.container .info-planet {
+  margin-left: 1.5rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.container .info-planet h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4.72px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+.container .info-planet h3 span {
+  margin-right: 0.375rem;
+  color: #484B54;
+  font-weight: bold;
+}
+.container .info-planet .info {
+  max-width: 37.5rem;
+  min-width: 26.25rem;
+  height: 31.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container .info-planet .info h4 {
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+  color: #8F9095;
+  font-size: 2rem;
+}
+.container .info-planet .info .crew-lists {
+  padding-left: 0;
+  width: 8.5rem;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+.container .info-planet .info .crew-lists a {
+  padding-bottom: 1rem;
+  background: #979797;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.container .info-planet .info .crew-lists a:first-child {
+  background-color: #fff;
+}
+.container .info-planet .info .crew-lists a:hover {
+  background-color: #fff;
+}
+.container .info-planet .info h1 {
+  margin-top: 1.5rem;
+  font-size: 11.71875rem;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 3.5rem;
+}
+.container .info-planet .info p {
+  font-size: 1.125rem;
+  font-family: "Barlow", sans-serif;
+  width: 75%;
+}
+.container .info-planet .info h3,
+.container .info-planet .info p {
+  color: #D0D6F9;
+  padding-bottom: 2.25rem;
+}
+.container .info-planet .info .avg {
+  max-width: 400px;
+  text-transform: uppercase;
+}
+.container .info-planet .info .avg .distance {
+  font-size: 1.09375rem;
+  color: #D0D6F9;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2.95px;
+}
+.container .info-planet .info .avg .value {
+  font-size: 2.1875rem;
+  color: #FFFFFF;
+  font-family: "Bellefair", serif;
+}
+
+@media screen and (max-width: 63.9375em) {
+  body {
+    background-image: url("/assets/crew/background-crew-tablet.jpg");
+  }
+
+  .navbar {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar .log {
+    margin-top: 25px;
+  }
+  .navbar ul li a span {
+    display: none;
+  }
+  .navbar .nav {
+    width: 69%;
+  }
+
+  .container {
+    margin-top: 3.125rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    height: calc(100vh - 146px);
+  }
+  .container .pickup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 400px !important;
+  }
+  .container .pickup h3 {
+    font-size: 1.25rem;
+  }
+  .container .pickup .crew {
+    width: 600px;
+    height: 400px;
+    margin-bottom: 0 !important;
+    background-position: center center !important;
+  }
+  .container .info-planet {
+    height: 385px !important;
+  }
+  .container .info-planet .info {
+    margin-top: -3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .info-planet .info .crew-lists {
+    position: static;
+  }
+  .container .info-planet .info h4 {
+    font-size: 1.5rem;
+  }
+  .container .info-planet .info ul {
+    margin-bottom: -0.75rem;
+  }
+  .container .info-planet .info ul li a {
+    font-size: 1rem !important;
+  }
+  .container .info-planet .info h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+  .container .info-planet .info p {
+    width: 80% !important;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 30px;
+  }
+  .container .info-planet .info .avg {
+    width: 31.25rem;
+    min-width: 25rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .container .info-planet .info .avg hr {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  body {
+    background-image: url("/assets/crew/background-crew-mobile.jpg");
+    background-size: cover;
+  }
+
+  .navbar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar .log {
+    margin-left: 1.75rem;
+  }
+  .navbar .nav {
+    display: none;
+  }
+  .navbar .nav ul {
+    width: 200px;
+  }
+  .navbar .nav ul li {
+    margin-top: 3.5rem;
+    height: 2rem;
+  }
+  .navbar .nav ul li:first-child {
+    margin-top: 6rem;
+  }
+  .navbar .nav ul li a {
+    width: 250px;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    letter-spacing: 3.375px;
+    height: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 5px;
+    border-right: 3px solid transparent;
+    border-bottom: 0 !important;
+  }
+  .navbar .nav ul li a span {
+    display: block;
+  }
+  .navbar .nav ul li a:hover {
+    border-bottom: 0;
+  }
+  .navbar .menu {
+    margin-right: 1.75rem;
+    display: block !important;
+    position: absolute;
+    z-index: 100;
+    right: 0;
+  }
+
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 90% !important;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  .container .pickup {
+    margin-top: 3.5rem;
+    width: 100%;
+    border-bottom: 2px solid #383B4B;
+    height: 20rem !important;
+  }
+  .container .pickup h3 {
+    font-size: 1rem;
+  }
+  .container .pickup .crew {
+    width: 100%;
+    height: 20rem;
+    position: absolute;
+    z-index: -1;
+  }
+  .container .info-planet {
+    height: 300px !important;
+    margin-top: 20px;
+  }
+  .container .info-planet h3 {
+    width: 400px;
+    left: 40px;
+    top: -24px;
+    text-align: center;
+  }
+  .container .info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 150px !important;
+    margin-top: 150px !important;
+  }
+  .container .info ul li a {
+    font-size: 0.875rem !important;
+  }
+  .container .info h4 {
+    font-size: 1.25rem !important;
+    margin-bottom: 0;
+  }
+  .container .info h1 {
+    font-size: 2rem !important;
+    margin-top: 10px !important;
+    margin-bottom: 24px;
+  }
+  .container .info p {
+    font-size: 1.25rem !important;
+    line-height: 35px !important;
+  }
+  .container .info .crew-lists {
+    width: 124px !important;
+    position: absolute !important;
+    bottom: 23.75rem !important;
+    left: auto !important;
+  }
+}

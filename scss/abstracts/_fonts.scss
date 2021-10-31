@@ -1,2 +1,48 @@
-$font-family: 'Kumbh Sans',
+@use "../functions/functions"as *;
+
+$font-bellefair: 'Bellefair',
+serif;
+$font-barlow:'Barlow',
 sans-serif;
+$font-barlow-condensed: 'Barlow Condensed',
+sans-serif;
+
+
+
+// font sizes
+
+$biggest-heading:rem(187.5);
+$big-heading:rem(125);
+$medium-heading:rem(70);
+$small-heading:rem(40);
+$smallest-heading:rem(35);
+
+$fs-e:rem(22.5);
+$fs-te:rem(35);
+$fs-f:rem(17.5);
+$fs-s:rem(22.5);
+$fs-tw:rem(20);
+$fs-tf:rem(25);
+$fs-oh:rem(100);
+$fs-oe:rem(18.75);
+
+$fs-onalti:rem(16);
+$fs-yirmi:rem(20);
+$fs-seksen:rem(80);
+$fs-ondort:rem(14);
+$fs-ellialti:rem(56);
+$fs-onbes:rem(15);
+$fs-otuziki:rem(32);
+$fs-onsekiz:rem(18);
+$fs-yirmidort:rem(24);
+$fs-kirk:rem(40);
+
+
+
+// character space
+$space-fpsf:5.9375px;
+$space-fpsff:5.9px;
+$space-tptf:2.9375px;
+$space-tps:3.375px;
+$space-tpnf:2.95px;
+$space-fpst:4.72px;

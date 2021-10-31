@@ -9,7 +9,7 @@
 }
 
 body {
-  background-image: url("/assets/home/background-home-desktop.jpg");
+  background-image: url("/assets/destination/background-destination-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -74,10 +74,35 @@ body {
 
 .container {
   height: calc(85vh - 136px);
-  width: 1480px !important;
+  width: 90%;
+  margin-top: 6rem;
 }
-.container .info {
-  width: 37.5rem;
+.container .pickup h3 {
+  color: #FFFFFF;
+  font-size: 2.1875rem;
+  letter-spacing: 5.9px;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.container .pickup h3 span {
+  color: #484B54;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+.container .pickup .planet {
+  background-image: url(/assets/destination/image-moon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 31.25rem;
+  height: 31.25rem;
+  margin-bottom: 6rem;
+}
+.container .info-planet {
+  margin-left: 1.5rem;
+}
+.container .info-planet .info {
+  max-width: 37.5rem;
+  min-width: 26.25rem;
   height: 31.875rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,46 +115,61 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.container .info h3 {
-  font-size: 2.1875rem;
-  text-transform: uppercase;
-  color: #D0D6F9;
-  letter-spacing: 5.9px;
+.container .info-planet .info .planet-lists {
+  padding-left: 0;
+  width: 22.25rem;
 }
-.container .info h1 {
+.container .info-planet .info .planet-lists li {
+  padding-bottom: 1rem;
+}
+.container .info-planet .info .planet-lists li a {
+  font-size: 1.25rem;
+  letter-spacing: 3.375px;
+  color: #D0D6F9;
+  text-transform: uppercase;
+}
+.container .info-planet .info .planet-lists li:first-child {
+  border-bottom: 2px solid #fff;
+}
+.container .info-planet .info h1 {
+  margin-top: 1.5rem;
   font-size: 11.71875rem;
   font-family: "Bellefair", serif;
   text-transform: uppercase;
   color: #FFFFFF;
+  font-size: 7.8125rem;
 }
-.container .info p {
+.container .info-planet .info p {
   font-size: 1.40625rem;
   font-family: "Barlow", sans-serif;
+  width: 100%;
 }
-.container .info h3,
-.container .info p {
+.container .info-planet .info h3,
+.container .info-planet .info p {
   color: #D0D6F9;
+  padding-bottom: 2.25rem;
+  border-bottom: 1px solid #383B4B;
 }
-.container .explore {
-  min-width: 22.8125rem;
-  min-height: 22.8125rem;
+.container .info-planet .info .avg {
+  max-width: 400px;
   text-transform: uppercase;
-  font-size: 2.5rem;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  font-family: "Bellefair", serif;
 }
-.container .explore:hover {
-  -webkit-box-shadow: 1px 1px 5px 100px rgba(255, 255, 255, 0.5);
-          box-shadow: 1px 1px 5px 100px rgba(255, 255, 255, 0.5);
+.container .info-planet .info .avg .distance {
+  font-size: 1.09375rem;
+  color: #D0D6F9;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2.95px;
+}
+.container .info-planet .info .avg .value-distance,
+.container .info-planet .info .avg .value-day {
+  font-size: 2.1875rem;
+  color: #FFFFFF;
+  font-family: "Bellefair", serif;
 }
 
 @media screen and (max-width: 63.9375em) {
   body {
-    background-image: url("/assets/home/background-home-tablet.jpg");
+    background-image: url("/assets/destination/background-destination-tablet.jpg");
   }
 
   .navbar {
@@ -150,11 +190,11 @@ body {
   }
 
   .container {
+    margin-top: 3.125rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: calc(100vh - 96px);
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -163,7 +203,31 @@ body {
         -ms-flex-align: center !important;
             align-items: center !important;
   }
-  .container .info {
+  .container .pickup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .pickup h3 {
+    font-size: 1.25rem;
+  }
+  .container .pickup .planet {
+    width: 18.75rem;
+    height: 18.75rem;
+    margin-bottom: 0 !important;
+  }
+  .container .info-planet {
+    margin-top: -3rem;
+  }
+  .container .info-planet .info {
+    margin-top: -3rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -171,27 +235,34 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .container .info h3 {
-    font-size: 1.5625rem;
+  .container .info-planet .info ul {
+    margin-bottom: -0.75rem;
   }
-  .container .info p {
-    width: 90%;
-    font-size: 1.25rem;
-    margin-bottom: 3.125rem;
+  .container .info-planet .info ul li a {
+    font-size: 1rem !important;
   }
-  .container .explore {
-    min-width: 18.875rem;
-    min-height: 18.875rem;
-    margin-bottom: 50px !important;
+  .container .info-planet .info h1 {
+    font-size: 5rem;
   }
-  .container .explore:hover {
-    -webkit-box-shadow: 1px 1px 5px 75px rgba(255, 255, 255, 0.5);
-            box-shadow: 1px 1px 5px 75px rgba(255, 255, 255, 0.5);
+  .container .info-planet .info p {
+    width: 100% !important;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .container .info-planet .info .avg {
+    width: 31.25rem;
+    min-width: 25rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .container .info-planet .info .avg hr {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 39.9375em) {
   body {
-    background-image: url("/assets/home/background-home-mobile.jpg");
+    background-image: url("/assets/destination/background-destination-mobile.jpg");
   }
 
   .navbar {
@@ -210,8 +281,6 @@ body {
   }
   .navbar .nav ul {
     width: 200px;
-    margin-top: -140px;
-    padding-left: 0;
   }
   .navbar .nav ul li {
     margin-top: 3.5rem;
@@ -255,7 +324,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: calc(100vh - 96px);
     width: 90% !important;
     text-align: center;
     display: -webkit-box;
@@ -264,9 +332,18 @@ body {
     -webkit-box-align: center !important;
         -ms-flex-align: center !important;
             align-items: center !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  .container .pickup h3 {
+    font-size: 1rem;
+  }
+  .container .pickup .planet {
+    width: 10.625rem;
+    height: 10.625rem;
   }
   .container .info {
-    margin-top: 1.5rem;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -278,45 +355,14 @@ body {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .container .info h3 {
-    font-size: 1.25rem;
+  .container .info ul li a {
+    font-size: 0.875rem !important;
   }
   .container .info h1 {
-    font-size: 6.25rem;
+    font-size: 3.5rem !important;
   }
   .container .info p {
-    font-size: 1.171875rem;
+    font-size: 0.9375rem !important;
     margin-bottom: 3.125rem;
-  }
-  .container .explore {
-    min-width: 11.71875rem;
-    min-height: 11.71875rem;
-    margin-bottom: 50px !important;
-  }
-  .container .explore:hover {
-    -webkit-box-shadow: 1px 1px 5px 50px rgba(255, 255, 255, 0.5);
-            box-shadow: 1px 1px 5px 50px rgba(255, 255, 255, 0.5);
-  }
-
-  .selected {
-    display: block !important;
-    position: absolute !important;
-    z-index: 99;
-    top: 0;
-    right: 0;
-    height: 100vh !important;
-    width: 67% !important;
-    background: -webkit-gradient(linear, left top, left bottom, from(#151923), color-stop(#333F53), to(#1D273C)) !important;
-    background: linear-gradient(180deg, #151923, #333F53, #1D273C) !important;
-  }
-
-  .menu-selected {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: absolute;
-    top: 9.375rem;
-    left: 2rem;
   }
 }
