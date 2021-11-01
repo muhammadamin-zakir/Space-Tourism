@@ -1,2 +1,1 @@
-# Project-Starter-Files
-SASS/SCSS, BABEL, WEBPACK-SERVER, JSON-SERVER READY
+css,scss,bootstrap,html,js,json,babel,webpack ile space tourism projesi.
